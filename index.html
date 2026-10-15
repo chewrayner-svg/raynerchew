@@ -6,18 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rayner Chew</title>
   <meta name="description" content="Rayner Chew: Economics & Management at Oxford, from Singapore. Interested in finance and entrepreneurship, and getting better at AI every day.">
+  <meta name="theme-color" content="#f7f4ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f141c" media="(prefers-color-scheme: dark)">
 
   <!-- Fonts from Google Fonts: Newsreader (serif, for reading) + Inter (for labels) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <!-- "?v=2" is a version tag: bump it whenever style.css changes so visitors get the new file straight away -->
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
-  <div class="container">
-
-    <header class="site-header">
+  <header class="site-header">
+    <div class="container header-inner">
       <a href="./" class="logo label">Rayner Chew</a>
       <nav class="label">
         <a href="#about">About</a>
@@ -27,14 +29,17 @@
         <a href="#writing">Writing</a>
         <a href="#contact">Contact</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
+  <div class="container">
     <main>
       <!-- ============ HERO ============ -->
       <div class="hero">
+        <p class="eyebrow label">Oxford &amp; Singapore</p>
         <h1>Rayner Chew</h1>
         <p class="lede">
-          Final-year Economics &amp; Management at Oxford. From Singapore.
+          Final-year Economics &amp; Management at Oxford, from Singapore.
           I spend my time somewhere between investing in companies and building them.
         </p>
         <div class="interests">
@@ -54,36 +59,34 @@
 
       <!-- ============ 01 ABOUT ============ -->
       <section class="section with-photo" id="about">
-        <div class="label">01 / Who I am</div>
+        <div class="label"><span class="num">01</span>Who I am</div>
         <!-- "alt" text describes the photo for screen readers and search engines -->
         <img class="portrait" src="images/rayner.jpg" alt="Rayner Chew outside the Radcliffe Camera, Oxford" width="800" height="1108">
         <div class="content">
           <p>
-            I grew up in Singapore and went to Raffles Institution, where I started a
-            podcast about failure after losing a student council election. It ended up
-            running for ten episodes and reaching 5,000+ listeners, with politicians,
-            business leaders and athletes as guests, all reached through cold outreach.
+            I'm in my final year reading Economics &amp; Management at Hertford College,
+            Oxford. Before that, I grew up in Singapore and went to Raffles Institution.
           </p>
           <p>
-            National Service put me in a finance office managing a S$3.6M procurement
-            budget. In the evenings I bootstrapped an A-Level Economics tutoring business,
-            growing it from 5 to 40+ students in a year.
+            At school I founded <a href="https://open.spotify.com/show/7MXEx6AosELRTVvvmLlBUb">Let's Talk Failure</a>,
+            a podcast on failure and youth mental health that ran for ten episodes and reached
+            5,000+ listeners, with politicians, business leaders and athletes as guests, all
+            reached through cold outreach. Later I bootstrapped an A-Level Economics tutoring
+            business from 5 to 40+ students in a year, and launched
+            <a href="https://open.spotify.com/show/1annAQR5iUajudpg7tpcp0">Economics Lah!</a>,
+            a policy podcast with ministers and government officials.
           </p>
           <p>
-            Now I'm reading Economics &amp; Management at Hertford College, Oxford. I care
-            most about problems I've seen up close: EstateFlow started after watching my
-            mother navigate my grandmother's estate, and a parliamentary speech on National
-            Service pay started with noticing that allowances weren't enough for
-            servicemen supporting their families.
+            I care most about problems I've seen up close. EstateFlow started after watching
+            my mother navigate my grandmother's estate.
           </p>
-          <p class="label">Based in Oxford &amp; Singapore</p>
         </div>
       </section>
 
       <!-- ============ 02 NOW ============ -->
       <!-- A "now" section says what you're focused on at the moment. Update it every few months. -->
       <section class="section" id="now">
-        <div class="label">02 / Now</div>
+        <div class="label"><span class="num">02</span>Now</div>
         <div class="content">
           <p>
             Final year at Oxford, and splitting the rest of my time three ways.
@@ -110,7 +113,7 @@
       <!-- ============ 03 BUILDING ============ -->
       <!-- To add a venture, copy one <div class="card">…</div> block -->
       <section class="section" id="building">
-        <div class="label">03 / Things I've built</div>
+        <div class="label"><span class="num">03</span>Things I've built</div>
         <div class="content wide">
           <div class="cards">
             <div class="card">
@@ -121,14 +124,14 @@
             <div class="card">
               <span class="label">2023 — 2024</span>
               <h3>The Economics Collective</h3>
-              <p>Bootstrapped A-Level Economics tutoring during National Service: 5 to 40+ students, three tutors hired, S$50k revenue. Plus <em>Economics Lah!</em>, a policy podcast with ministers.</p>
-              <div class="more-links label more"><a href="https://spoti.fi/4mZVhgy">Listen</a></div>
+              <p>Bootstrapped A-Level Economics tutoring: 5 to 40+ students in a year, three tutors hired, S$50k revenue. Plus <em>Economics Lah!</em>, a policy podcast with ministers.</p>
+              <div class="more-links label more"><a href="https://open.spotify.com/show/1annAQR5iUajudpg7tpcp0">Listen on Spotify</a></div>
             </div>
             <div class="card">
               <span class="label">2021 — 2023</span>
               <h3>Let's Talk Failure</h3>
               <p>A podcast on failure and youth mental health with politicians, business leaders and athletes. Ten episodes, 5,000+ listeners.</p>
-              <div class="more-links label more"><a href="https://spoti.fi/3ZQkKzd">Listen</a></div>
+              <div class="more-links label more"><a href="https://open.spotify.com/show/7MXEx6AosELRTVvvmLlBUb">Listen on Spotify</a></div>
             </div>
             <div class="card">
               <span class="label">2020 — 2022</span>
@@ -142,55 +145,43 @@
       <!-- ============ 04 RECORD ============ -->
       <!-- To add a role, copy one <li>…</li> block. Newest at the top. -->
       <section class="section" id="record">
-        <div class="label">04 / Record</div>
+        <div class="label"><span class="num">04</span>Record</div>
         <div class="content wide">
           <p class="label subhead">Experience</p>
           <ul class="timeline">
             <li>
               <span class="when label">Summer 2026</span>
-              <div>
+              <div class="entry">
                 <h3>Equity Research<span class="slash">/</span><em>Fidelity Investments</em></h3>
                 <p>Hong Kong. Covered Chinese consumer, healthcare and internet equities. My Buy recommendation on Miniso was actioned by a portfolio manager. Highest average pitch score across the global intern class.</p>
               </div>
             </li>
             <li>
               <span class="when label">2024 — Present</span>
-              <div>
+              <div class="entry">
                 <h3>Portfolio Manager<span class="slash">/</span><em>Oxford Alpha Fund</em></h3>
                 <p>Lead consumer &amp; emerging markets coverage. Captained the team that won 1st Place Overall at the London Business School Stock Pitch Competition 2026.</p>
               </div>
             </li>
             <li>
               <span class="when label">2025</span>
-              <div>
+              <div class="entry">
                 <h3>Private Equity<span class="slash">/</span><em>Pavilion Capital (Temasek)</em></h3>
                 <p>Singapore. Screened 15+ TMT funds across a $9B portfolio and drafted Investment Committee memo sections.</p>
               </div>
             </li>
             <li>
               <span class="when label">2025</span>
-              <div>
+              <div class="entry">
                 <h3>Inside the Industry Challenge<span class="slash">/</span><em>J.P. Morgan</em></h3>
                 <p>Led a team pitching a long-volatility trade on the Hang Seng Index; received a Global Markets Summer Analyst offer.</p>
               </div>
             </li>
             <li>
               <span class="when label">2025 — 2026</span>
-              <div>
+              <div class="entry">
                 <h3>M&amp;A Director<span class="slash">/</span><em>CapitOx</em></h3>
                 <p>Led two cross-border acquisition pitches to the CapitOx Global Finals (top 8).</p>
-              </div>
-            </li>
-            <li>
-              <span class="when label">2023 — 2024</span>
-              <div>
-                <h3>National Service<span class="slash">/</span><em>Singapore Armed Forces</em></h3>
-                <p>Finance admin, managing a S$3.6M annual procurement budget. Researched conscript pay around the world and built the case for a parliamentary speech on NS allowances, which were later revised upward by 10.9% to 21.7%.</p>
-                <div class="more-links label">
-                  <a href="https://mothership.sg/2023/02/nsf-allowance-inflation/">Speech, 2023</a>
-                  <a href="https://www.channelnewsasia.com/watch/committee-supply-2024-debate-day-2-gerald-giam-ns-pay-4158931">Speech, 2024</a>
-                  <a href="https://www.mha.gov.sg/media-room/newsroom/revision-of-national-service-allowance/">The revision</a>
-                </div>
               </div>
             </li>
           </ul>
@@ -199,14 +190,14 @@
           <ul class="timeline">
             <li>
               <span class="when label">2024 — 2027</span>
-              <div>
+              <div class="entry">
                 <h3>Economics &amp; Management<span class="slash">/</span><em>University of Oxford</em></h3>
                 <p>Hertford College. First Class Honours in Preliminary Examinations.</p>
               </div>
             </li>
             <li>
               <span class="when label">2017 — 2022</span>
-              <div>
+              <div class="entry">
                 <h3>A Levels<span class="slash">/</span><em>Raffles Institution</em></h3>
                 <p>8 A* distinctions including H3 Game Theory. MOE Humanities Scholar.</p>
                 <div class="more-links label"><a href="http://bit.ly/442i6Yd">Featured on CNA</a></div>
@@ -218,7 +209,7 @@
 
       <!-- ============ 05 RECOGNITION ============ -->
       <section class="section" id="recognition">
-        <div class="label">05 / Recognition</div>
+        <div class="label"><span class="num">05</span>Recognition</div>
         <div class="content">
           <ul class="diamonds">
             <li>1st Place Overall, London Business School Stock Pitch Competition, 2026 (Team Captain)</li>
@@ -232,7 +223,7 @@
 
       <!-- ============ 06 WRITING ============ -->
       <section class="section" id="writing">
-        <div class="label">06 / Writing</div>
+        <div class="label"><span class="num">06</span>Writing</div>
         <div class="content">
           <!-- When you publish a post, replace the line below with:
                <ul class="post-list">
@@ -244,7 +235,7 @@
 
       <!-- ============ 07 OFF THE CLOCK ============ -->
       <section class="section" id="personal">
-        <div class="label">07 / Off the clock</div>
+        <div class="label"><span class="num">07</span>Off the clock</div>
         <div class="content">
           <dl class="facts">
             <dt class="label">Play</dt>
@@ -261,11 +252,11 @@
 
       <!-- ============ 08 CONTACT ============ -->
       <section class="section" id="contact">
-        <div class="label">08 / Say hello</div>
+        <div class="label"><span class="num">08</span>Say hello</div>
         <div class="content">
           <p>If you're building something, investing in something, or just want to talk about either, I'd love to hear from you.</p>
           <ul class="contact-links">
-            <li><a href="mailto:chewrayner@gmail.com">Email</a></li>
+            <li><a href="mailto:chewrayner@gmail.com">Email me</a></li>
             <li><a href="https://www.linkedin.com/in/raynerchew/">LinkedIn</a></li>
             <!-- Add your CV: put cv.pdf in this folder, then un-comment the next line -->
             <!-- <li><a href="cv.pdf">CV</a></li> -->
