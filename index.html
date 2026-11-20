@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
 
   <!-- "?v=2" is a version tag: bump it whenever style.css changes so visitors get the new file straight away -->
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
   <header class="site-header">
@@ -112,6 +112,18 @@
         <div class="content wide">
           <div class="cards">
             <div class="card">
+              <span class="label">Nov 2026</span>
+              <h3>Baton</h3>
+              <p>A handover tool for student societies, small charities and account teams. It reads a team's Drive, Gmail, calendar and bank statements, interviews outgoing members with AI, and maps the people, money, deadlines and processes their successor inherits. Built at the Applied AI Hackathon, Oxford Edge.</p>
+              <div class="more-links label more"><a href="https://baton-knowledge-bridge.lovable.app/">Try the prototype</a></div>
+            </div>
+            <div class="card">
+              <span class="label">2026</span>
+              <h3>TaxSavvyAI</h3>
+              <p>A free tool that finds the UK tax reliefs people miss. Five questions produce a personal action plan across 40+ reliefs and allowances, with an inheritance tax planner alongside. Built for the EWOR Fellowship.</p>
+              <div class="more-links label more"><a href="https://taxsavvyai.lovable.app/">Try it</a></div>
+            </div>
+            <div class="card">
               <span class="label">2026</span>
               <h3>EstateFlow</h3>
               <p>Co-founder &amp; CEO. UK legaltech giving bereaved families liquidity during probate. Built the MVP, won the Oxford FinTech Innovation Sprint 2026 and joined the Oxford Venture Builders pre-accelerator.</p>
@@ -137,103 +149,91 @@
         </div>
       </section>
 
-      <!-- ============ 04 HACKATHONS ============ -->
-      <!-- To add a hackathon project, copy one <div class="card">…</div> block. Newest first. -->
-      <section class="section" id="hackathons">
-        <div class="label"><span class="num">04</span>Hackathons</div>
+      <!-- ============ 04 STOCK PITCHES ============ -->
+      <!-- To add a pitch, copy one <li class="pitch-card">…</li> block. Newest first. -->
+      <section class="section" id="pitches">
+        <div class="label"><span class="num">04</span>Stock pitches</div>
         <div class="content wide">
-          <div class="cards">
-            <div class="card">
-              <span class="label">Nov 2026</span>
-              <h3>Baton</h3>
-              <p>A handover tool for student societies, small charities and account teams. It reads a team's Drive, Gmail, calendar and bank statements, interviews outgoing members with AI, and maps the people, money, deadlines and processes their successor inherits. Built at the Applied AI Hackathon, Oxford Edge.</p>
-              <div class="more-links label more"><a href="https://baton-knowledge-bridge.lovable.app/">Try the prototype</a></div>
-            </div>
-            <div class="card">
-              <span class="label">2026</span>
-              <h3>TaxSavvyAI</h3>
-              <p>A free tool that finds the UK tax reliefs people miss. Five questions produce a personal action plan across 40+ reliefs and allowances, with an inheritance tax planner alongside. Built for the EWOR Fellowship.</p>
-              <div class="more-links label more"><a href="https://taxsavvyai.lovable.app/">Try it</a></div>
-            </div>
-            <div class="card">
-              <span class="label">2026</span>
-              <h3>EstateFlow</h3>
-              <p>Winner, Oxford FinTech Innovation Sprint. Probate liquidity for bereaved families, from idea to MVP, then into the Oxford Venture Builders pre-accelerator.</p>
-            </div>
-            <div class="card">
-              <span class="label">2026</span>
-              <h3>Five-agent pitch pipeline</h3>
-              <p>A Claude pipeline for stock pitching: app store sentiment, earnings call pressure, Reddit reactivation mining, sell-side consensus decomposition and a Q&amp;A stress test.</p>
+          <div class="carousel-head">
+            <p class="label carousel-count">8 pitches</p>
+            <div class="carousel-nav">
+              <button type="button" class="carousel-btn" data-dir="-1" aria-label="Previous pitches">&larr;</button>
+              <button type="button" class="carousel-btn" data-dir="1" aria-label="Next pitches">&rarr;</button>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- ============ 05 STOCK PITCHES ============ -->
-      <!-- To add a pitch, copy one <li>…</li> block. Newest at the top. -->
-      <section class="section" id="pitches">
-        <div class="label"><span class="num">05</span>Stock pitches</div>
-        <div class="content wide">
-          <ul class="pitches">
-            <li>
-              <span class="when label">Nov 2026</span>
-              <div class="pitch-name"><h3>Tripadvisor</h3><span class="label">TRIP</span></div>
-              <span class="call long label">Long</span>
-              <p>At 3.2x FY27E EBITDA the market prices in no recovery. Viator is undervalued inside the group, AI is an opportunity as well as a threat, and $644m of cash is free for buybacks with an activist on the board. 12-month target $10.94 (+54%). <span class="venue">Squarepoint EDGE</span></p>
-              <div class="more-links label pitch-links"><a href="pitches/TRIP_Investment_Memo.pdf">Read the memo</a><a href="https://www.youtube.com/watch?v=wBu8HOOEsbY">Watch the pitch</a></div>
+          <ul class="carousel" tabindex="0" aria-label="Stock pitches, scroll sideways">
+            <li class="pitch-card">
+              <div class="pitch-tile long"><span class="ticker">TRIP</span><span class="call label">Long</span></div>
+              <span class="label when">Nov 2026</span>
+              <h3>Tripadvisor</h3>
+              <p>Viator undervalued inside the group, AI as an opportunity, and $644m free for buybacks with an activist on the board. Target $10.94 (+54%).</p>
+              <p class="venue">Squarepoint EDGE</p>
+              <div class="more-links label more"><a href="pitches/TRIP_Investment_Memo.pdf">Read the memo</a><a href="https://www.youtube.com/watch?v=wBu8HOOEsbY">Watch the pitch</a></div>
             </li>
-            <li>
-              <span class="when label">Nov 2026</span>
-              <div class="pitch-name"><h3>Basic-Fit</h3><span class="label">BFIT NA</span></div>
-              <span class="call long label">Long</span>
-              <p>More members per club at higher prices, cash flow returned through buybacks, and cost savings from turning French clubs unstaffed. <span class="venue">Oxford Alpha Fund</span></p>
+            <li class="pitch-card">
+              <div class="pitch-tile long"><span class="ticker">BFIT NA</span><span class="call label">Long</span></div>
+              <span class="label when">Nov 2026</span>
+              <h3>Basic-Fit</h3>
+              <p>More members per club at higher prices, buybacks from free cash flow, and unstaffed French clubs cutting costs.</p>
+              <p class="venue">Oxford Alpha Fund</p>
+              
             </li>
-            <li>
-              <span class="when label">Mar 2026</span>
-              <div class="pitch-name"><h3>Match Group</h3><span class="label">MTCH</span></div>
-              <span class="call long label">Long</span>
-              <p>Payments moving from app stores to the web, Tinder payers stabilising, and Hinge growing structurally. Built on Carbon Arc alternative data. <span class="venue">Oxford Alpha Fund Pitch Day, Hilary 2026; 1st Place, LBS Stock Pitch Competition; Warwick Hedge Fund Society</span></p>
-              <div class="more-links label pitch-links"><a href="https://www.oxfordalphafund.com/news/2026/3/13/match-group-inc">See the deck</a></div>
+            <li class="pitch-card">
+              <div class="pitch-tile long"><span class="ticker">MTCH</span><span class="call label">Long</span></div>
+              <span class="label when">Mar 2026</span>
+              <h3>Match Group</h3>
+              <p>Payments moving from app stores to the web, Tinder payers stabilising, and Hinge growing structurally.</p>
+              <p class="venue">1st Place, LBS Stock Pitch Competition; OAF Pitch Day</p>
+              <div class="more-links label more"><a href="https://www.oxfordalphafund.com/news/2026/3/13/match-group-inc">See the deck</a></div>
             </li>
-            <li>
-              <span class="when label">2026</span>
-              <div class="pitch-name"><h3>Dutch Bros</h3><span class="label">BROS</span></div>
-              <span class="call short label">Short</span>
-              <p>GLP-1 headwinds, build-to-suit lease accounting flattering ROIC, and slowing same-store sales. <span class="venue">Oxford Alpha Fund</span></p>
+            <li class="pitch-card">
+              <div class="pitch-tile short"><span class="ticker">BROS</span><span class="call label">Short</span></div>
+              <span class="label when">2026</span>
+              <h3>Dutch Bros</h3>
+              <p>GLP-1 headwinds, lease accounting flattering ROIC, and slowing same-store sales.</p>
+              <p class="venue">Oxford Alpha Fund</p>
+              
             </li>
-            <li>
-              <span class="when label">Jul 2026</span>
-              <div class="pitch-name"><h3>Miniso</h3><span class="label">MNSO / 9896 HK</span></div>
-              <span class="call long label">Long</span>
-              <p>Initiation note on IP lifestyle retail, with a bottom-up China store model by format and mall grade. Actioned by a portfolio manager. <span class="venue">Fidelity Investments</span></p>
+            <li class="pitch-card">
+              <div class="pitch-tile long"><span class="ticker">MNSO / 9896 HK</span><span class="call label">Long</span></div>
+              <span class="label when">Jul 2026</span>
+              <h3>Miniso</h3>
+              <p>IP lifestyle retail initiation with a bottom-up China store model. Actioned by a portfolio manager.</p>
+              <p class="venue">Fidelity Investments</p>
+              
             </li>
-            <li>
-              <span class="when label">Dec 2025</span>
-              <div class="pitch-name"><h3>Upwork</h3><span class="label">UPWK</span></div>
-              <span class="call long label">Long</span>
-              <p>Priced for AI obsolescence, yet AI is growing its market. Sales and marketing cut from about 40% to 22% of revenue drives lasting margin expansion, and the Lifted enterprise platform opens up enterprise spend. Target $25.78 (+42%). <span class="venue">Oxford Alpha Fund Pitch Day, Michaelmas 2025</span></p>
-              <div class="more-links label pitch-links"><a href="https://www.oxfordalphafund.com/news/2025/12/21/upwork-inc">See the deck</a></div>
+            <li class="pitch-card">
+              <div class="pitch-tile long"><span class="ticker">UPWK</span><span class="call label">Long</span></div>
+              <span class="label when">Dec 2025</span>
+              <h3>Upwork</h3>
+              <p>Priced for AI obsolescence, yet AI is growing its market, margins are expanding and enterprise is opening up. Target $25.78 (+42%).</p>
+              <p class="venue">OAF Pitch Day, Michaelmas 2025</p>
+              <div class="more-links label more"><a href="https://www.oxfordalphafund.com/news/2025/12/21/upwork-inc">See the deck</a></div>
             </li>
-            <li>
-              <span class="when label">2025</span>
-              <div class="pitch-name"><h3>Chagee</h3><span class="label">CHA</span></div>
-              <span class="call long label">Long</span>
-              <p>Part of a coverage sprint on Chinese ready-made beverages, with a follow-up after earnings on how the results changed the thesis. <span class="venue">Oxford Alpha Fund</span></p>
+            <li class="pitch-card">
+              <div class="pitch-tile long"><span class="ticker">CHA</span><span class="call label">Long</span></div>
+              <span class="label when">2025</span>
+              <h3>Chagee</h3>
+              <p>Chinese ready-made beverages coverage, with a post-earnings thesis update.</p>
+              <p class="venue">Oxford Alpha Fund</p>
+              
             </li>
-            <li>
-              <span class="when label">2025</span>
-              <div class="pitch-name"><h3>Nayuki</h3><span class="label">2150 HK</span></div>
-              <span class="call long label">Long</span>
-              <p>Deep value, backed by investor relations outreach in English and Mandarin. <span class="venue">Oxford Alpha Fund</span></p>
+            <li class="pitch-card">
+              <div class="pitch-tile long"><span class="ticker">2150 HK</span><span class="call label">Long</span></div>
+              <span class="label when">2025</span>
+              <h3>Nayuki</h3>
+              <p>Deep value, backed by investor relations outreach in English and Mandarin.</p>
+              <p class="venue">Oxford Alpha Fund</p>
+              
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- ============ 06 RECORD ============ -->
+      <!-- ============ 05 RECORD ============ -->
       <!-- To add a role, copy one <li>…</li> block. Newest at the top. -->
       <section class="section" id="record">
-        <div class="label"><span class="num">06</span>Record</div>
+        <div class="label"><span class="num">05</span>Record</div>
         <div class="content wide">
           <p class="label subhead">Experience</p>
           <ul class="timeline">
@@ -295,9 +295,9 @@
         </div>
       </section>
 
-      <!-- ============ 07 RECOGNITION ============ -->
+      <!-- ============ 06 RECOGNITION ============ -->
       <section class="section" id="recognition">
-        <div class="label"><span class="num">07</span>Recognition</div>
+        <div class="label"><span class="num">06</span>Recognition</div>
         <div class="content">
           <ul class="diamonds">
             <li>1st Place Overall, London Business School Stock Pitch Competition, 2026 (Team Captain)</li>
@@ -309,9 +309,9 @@
         </div>
       </section>
 
-      <!-- ============ 08 WRITING ============ -->
+      <!-- ============ 07 WRITING ============ -->
       <section class="section" id="writing">
-        <div class="label"><span class="num">08</span>Writing</div>
+        <div class="label"><span class="num">07</span>Writing</div>
         <div class="content">
           <!-- When you publish a post, replace the line below with:
                <ul class="post-list">
@@ -321,9 +321,9 @@
         </div>
       </section>
 
-      <!-- ============ 09 OFF THE CLOCK ============ -->
+      <!-- ============ 08 OFF THE CLOCK ============ -->
       <section class="section" id="personal">
-        <div class="label"><span class="num">09</span>Off the clock</div>
+        <div class="label"><span class="num">08</span>Off the clock</div>
         <div class="content">
           <dl class="facts">
             <dt class="label">Play</dt>
@@ -338,9 +338,9 @@
         </div>
       </section>
 
-      <!-- ============ 10 CONTACT ============ -->
+      <!-- ============ 09 CONTACT ============ -->
       <section class="section" id="contact">
-        <div class="label"><span class="num">10</span>Say hello</div>
+        <div class="label"><span class="num">09</span>Say hello</div>
         <div class="content">
           <p>If you're building something, investing in something, or just want to talk about either, I'd love to hear from you.</p>
           <ul class="contact-links">
@@ -358,5 +358,24 @@
       <a href="#">Back to top ↑</a>
     </footer>
   </div>
+  <script>
+    // Arrow buttons scroll the pitch carousel by roughly one screen of cards
+    document.querySelectorAll('.carousel-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var track = btn.closest('.content').querySelector('.carousel');
+        track.scrollBy({ left: Number(btn.dataset.dir) * track.clientWidth * 0.9, behavior: 'smooth' });
+      });
+    });
+    document.querySelectorAll('.carousel').forEach(function (track) {
+      var btns = track.closest('.content').querySelectorAll('.carousel-btn');
+      function update() {
+        btns[0].disabled = track.scrollLeft < 4;
+        btns[1].disabled = track.scrollLeft + track.clientWidth > track.scrollWidth - 4;
+      }
+      track.addEventListener('scroll', update, { passive: true });
+      window.addEventListener('resize', update);
+      update();
+    });
+  </script>
 </body>
 </html>

@@ -158,7 +158,7 @@ strong { color: var(--text); font-weight: 500; }
 }
 .section > .label { color: var(--text); padding-top: 0.35rem; }
 .section > .label .num { color: var(--brass); margin-right: 0.75rem; }
-.section .content { max-width: 46rem; }
+.section .content { max-width: 46rem; min-width: 0; }
 .section .content.wide { max-width: none; }
 
 .updated { margin-top: 0.5rem; }
@@ -240,34 +240,63 @@ strong { color: var(--text); font-weight: 500; }
 .timeline h3 em { font-weight: 400; }
 .timeline p { margin: 0 0 0.75rem; }
 
-/* ---- 7b. Stock pitches ------------------------------------ */
-.pitches { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--rule); }
-.pitches > li {
-  display: grid;
-  grid-template-columns: 6rem 11rem 4.5rem 1fr;
-  gap: 0.25rem 1.25rem;
-  align-items: baseline;
-  padding: 1.1rem 0;
-  border-bottom: 1px solid var(--rule);
-}
-.pitch-name h3 {
-  font-family: var(--serif);
-  font-weight: 500;
-  font-size: 1.2rem;
+/* ---- 7b. Stock pitch carousel ---------------------------- */
+.carousel-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+.carousel-count { margin: 0; color: var(--muted); }
+.carousel-nav { display: flex; gap: 0.5rem; }
+.carousel-btn {
+  width: 2.5rem; height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--rule);
+  background: var(--surface);
   color: var(--text);
-  margin: 0;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: border-color 0.15s, opacity 0.15s;
 }
-.pitch-name .label { display: block; color: var(--muted); }
-.call { font-weight: 500; }
-.call.long { color: var(--accent); }
-.call.short { color: var(--brass); }
-.pitches p { margin: 0; font-size: 1rem; line-height: 1.6; }
-.pitches .pitch-links { grid-column: 4; margin-top: 0.5rem; }
-.pitches .venue { display: block; margin-top: 0.3rem; font-style: italic; color: var(--muted); }
+.carousel-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.carousel-btn:disabled { opacity: 0.35; cursor: default; }
+.carousel {
+  list-style: none; margin: 0; padding: 0.25rem 0 1.25rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(15rem, calc((100% - 2.5rem) / 2.4));
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--rule) transparent;
+}
+.carousel:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.pitch-card {
+  scroll-snap-align: start;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex; flex-direction: column;
+  padding-bottom: 1.4rem;
+}
+.pitch-card > *:not(.pitch-tile) { margin-left: 1.4rem; margin-right: 1.4rem; }
+.pitch-tile {
+  height: 8.5rem;
+  display: flex; flex-direction: column; justify-content: space-between;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.1rem;
+  background: var(--accent);
+  color: var(--bg);
+}
+.pitch-tile.short { background: var(--brass); }
+.pitch-tile .ticker { font-family: var(--serif); font-size: 1.9rem; line-height: 1.1; }
+.pitch-tile .call { color: inherit; opacity: 0.85; }
+.pitch-card .when { color: var(--muted); }
+.pitch-card h3 { font-family: var(--serif); font-weight: 500; font-size: 1.3rem; color: var(--text); margin: 0.35rem 0 0.5rem; }
+.pitch-card p { font-size: 0.98rem; line-height: 1.55; margin-top: 0; margin-bottom: 0.6rem; }
+.pitch-card .venue { font-style: italic; color: var(--muted); margin-bottom: 1rem; }
+.pitch-card .more { margin-top: auto; }
 @media (max-width: 760px) {
-  .pitches > li { grid-template-columns: 1fr auto; }
-  .pitches .when { grid-column: 1 / -1; }
-  .pitches p, .pitches .pitch-links { grid-column: 1 / -1; }
+  .carousel { grid-auto-columns: 82%; }
 }
 
 .subhead { margin: 0 0 1.75rem; color: var(--accent); }
